@@ -5,6 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>whatud</title>
 <!-- 네이버 서치어드바이저 소유확인 (2026-08-29). 지우면 소유확인이 풀린다. -->
+<!-- 이 페이지는 소유확인용 빈 껍데기다. 검색 결과에 뜨면 이상하므로 색인만 막는다.
+     robots.txt 로 막으면 안 된다. 크롤러가 페이지를 아예 못 읽어 이 noindex 도 못 보고,
+     주소만 검색에 남는 역효과가 난다. 읽게 두고 색인만 거부하는 게 맞다.
+     ※ 소유확인은 페이지를 직접 받아 태그를 확인하는 방식이라 noindex 와 무관하다. -->
+<meta name="robots" content="noindex, follow">
 <meta name="naver-site-verification" content="f95637922610d8c3ab40e5a46a6fae4ecaec5a64" />
 <!--
   이 페이지의 용도는 하나다: whatud.github.io 라는 호스트의 소유를 증명하는 것.
