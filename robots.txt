@@ -1,0 +1,10 @@
+# 크롤러는 호스트 루트의 robots.txt 만 읽는다.
+# munzzi-freeclass/robots.txt 는 하위 경로라 무시되므로 여기서 관리한다.
+User-agent: *
+Allow: /
+
+# 신청 완료 페이지는 검색 결과에 뜨면 안 된다.
+# 신청도 안 한 사람이 "신청이 완료되었습니다" 화면에 떨어진다.
+Disallow: /munzzi-freeclass/thanks.html
+
+Sitemap: https://whatud.github.io/munzzi-freeclass/sitemap.xml
